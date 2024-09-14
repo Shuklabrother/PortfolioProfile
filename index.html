@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio: Ayush Shukla</title>
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fontawesome link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  </head>
+  <style>
+    /* Color variables */
+:root {
+    --white-color: #fff;
+    --bg-color: #fff;
+    --gray-color: #ccc;
+  }
+  
+  /* Changing background color */
+  body {
+    background: var(--bg-color) !important;
+  }
+  
+  /* Changing link color */
+  .nav-item .nav-link {
+    color: var(--white-color);
+  }
+  
+  /* Hero section background image */
+  .hero {
+    height: 100vh;
+    background-image: url(home-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 60% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #skills i {
+    height: 100px;
+    width: 100px;
+  }
+  
+  #portfolio img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  #about .img,
+  #about img,
+  .hire-text h2 {
+    position: relative;
+  }
+  
+  footer{
+    color: #fff;
+  }
+  
+  footer .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  .card-wrapper {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover img {
+    opacity: 0.8;
+  }
+  
+  /* about section styling */
+  #about {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  #about img {
+    max-width: 150px;
+    border: 5px solid #007bff;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #about h3 {
+    font-size: 1.75rem;
+    margin-top: 20px;
+    color: #007bff;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  #about ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #about ul li {
+    background: url('check-icon.png') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  </style>
+  <body>
+    <!-- Header & Navbar -->
+    <header class="bg-dark fixed-top">
+      <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-3" href="#">Ayush Shukla</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#skills">SKILLS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero or Showcase Section -->
+    <section class="hero d-flex flex-column align-items-center justify-content-center">
+      <div class="text-center">
+        <h1 class="h1 text-white fw-medium fst-italic">Ayush Shukla</h1>
+        <h2 class="display-3 text-white fw-bold">JEE <br /> Aspirant</h2>
+        <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="container py-5" id="skills">
+      <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
+          <h2>SKILLS</h2>
+          <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in the field.</h5>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between mx-0">
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
+
+          <h3 class="mt-4 h4">Font-End Development</h3>
+          <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly interfaces.</p>
+        </div>
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop"></i>
+
+          <h3 class="mt-4 h4">Python Development</h3>
+          <p class="text-center">Skilled in server-side programming using technologies like django and flask.</p>
+        </div>
+        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-calculator"></i>
+            
+          <h3 class="mt-4 h4">Math</h3>
+          <p class="text-center">Math is pillar of coding.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="container py-5" id="portfolio">
+      <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center justify-content-center">
+          <h2>PORTFOLIO</h2>
+          <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
+        </div>
+        <div class="row mt-5 mx-0 justify-content-center align-items-center">
+            <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
+                <div class="card mt-4">
+                  <img src="jarvis.png" class="img-fluid" alt="portfolio-img">
+                  <div class="card-body text-center">
+                    <a href="https://shuklabrother.github.io/Jarvismark1github.io/?fbclid=PAZXh0bgNhZW0CMTEAAaa-vH7zOZ1ao4zm9MX0K4Ktoiyj1c7ZyQ-ZRMBVz-ytOs_snISROjYBgMY_aem_DwEGyrxn_zFRttfhwdjkZw">
+                      <h6 class="card-title">JARVIS Mark 1</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+            <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
+              <div class="card mt-4">
+                <img src="vk18.png" class="img-fluid" alt="portfolio-img">
+                <div class="card-body text-center">
+                 <a href="https://www.mediafire.com/file/xrs1e8m9bzu17tc/Virat_star_cricket.apk/file"><h6 class="card-title">Virat Kohli star Cricket game</h6></a>
+                </div>
+              </div>
+            </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+  <!-- About Section -->
+<section class="container py-5" id="about">
+    <div class="row mt-4 py-3">
+      <div class="col-12 text-center">
+        <h2>About Me</h2>
+        <h5 class="text-secondary fw-normal py-2 fst-italic">A bit about who I am and what I do.</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 text-center">
+        <img src="avatar.jpg"  alt="Ayush Shukla">
+      </div>
+      <div class="col-lg-8 col-md-6">
+        <h3>Introduction</h3>
+        <p>
+          I am Ayush Shukla, a passionate individual with a strong interest in Artificial Intelligence, mathematics, and cricket. Currently preparing for JEE Mains and MHT CET, I aim to pursue a B.Tech in AI & Data Science at KJ Somaiya College of Engineering.
+        </p>
+        <h3>Academic Achievements</h3>
+        <ul>
+          <li>1. Scored 98/100 in Mathematics in Class 10</li>
+          <li>2. Ranked 1,488 in the Silver Zone Olympiads Mathematics</li>
+        </ul>
+        <h3>Projects</h3>
+        <p>
+          I have developed various projects such as <a href="https://shuklabrother.github.io/Jarvismark1github.io/?fbclid=PAZXh0bgNhZW0CMTEAAaa-vH7zOZ1ao4zm9MX0K4Ktoiyj1c7ZyQ-ZRMBVz-ytOs_snISROjYBgMY_aem_DwEGyrxn_zFRttfhwdjkZw">JARVIS Mark 1</a>, a desktop assistant, and <a href="https://www.mediafire.com/file/xrs1e8m9bzu17tc/Virat_star_cricket.apk/file">Virat Kohli Star Cricket game</a>.
+        </p>
+        <h3>Cricket Journey</h3>
+        <p>
+          My journey in cricket began with playing in the Under-16 Payyade Trophy. This experience honed my skills and fueled my passion for the sport. Looking ahead, I plan to participate in cricket leagues during my engineering course to continue pursuing this passion alongside my studies.
+        </p>
+        <h3>Future Goals</h3>
+        <p>
+          My long-term goals include becoming a math professor, contributing to advancements in AI, and achieving financial success. I am committed to making a significant impact in my fields of interest and excited about the opportunities ahead.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+     <!-- Footer -->
+     <footer  class="bg-dark fixed-bottom">
+      <div class="container-xxl flex-wrap pt-3 d-flex align-items-center justify-content-center justify-content-md-between">
+        <p>© 2023 Designed and Developed by @ Ayush Shukla</p>
+        <ul class="social-icons d-flex">
+          <a href="https://www.instagram.com/real.jarvis_/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-instagram"></i></small></a>
+          <a href="https://github.com/Shuklabrother" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-github"></i></small></a>
+        </ul>
+      </div>
+     </footer>
+    
+     <!-- Bootstrap script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
